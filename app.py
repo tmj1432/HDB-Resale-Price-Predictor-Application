@@ -28,4 +28,4 @@ if st.button('Predict'):
     X = np.array([flat_type,floor_area_sqft,lease_commence_date,mid,planning_area])
     X = X.reshape(1,-1)
     pred = model.predict(X)[0]
-    st.markdown(f'### Predicted Resale Price of this HDB is ${str(round(pred,0))}')
+    st.markdown(f'### Predicted Resale Price of this HDB is ${str(int(round(pred,0)))}')
