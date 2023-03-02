@@ -44,6 +44,7 @@ However, before concluding to use XGBoost as a standalone model, I decided to co
 
 ## Deployment
 Finally, the final model is being deployed on streamlit.io
+
 [Link to  streamlit web application](https://tmj1432-hdb-resale-price-predictor-application-app-5kd0gz.streamlit.app/)
 
 ## Limitation & Future Work
