@@ -42,6 +42,10 @@ However, before concluding to use XGBoost as a standalone model, I decided to co
 |flat_type|0.098|0.001|
 |mid|0.063|0.001|
 
+Realistically, houses are priced according to their price per sqft. Therefore, it does not come as a surprise to me that floor_area_sqft has the highest permutation importance out of all the features. Next, planning_area has the second highest permutation importance. Again, this does not come as a surprise to me as HDBs in different regions of Singapore generally has their own price ranges. 
+
+However, it is surprising that the level of the apartment did not really play a big role in its permutation importance. 
+
 ## Deployment
 Finally, the final model is being deployed on streamlit.io
 
