@@ -21,7 +21,7 @@ As a data scientist for a real estate company in Singapore, I am tasked to build
 **Modelling Summary**
 |Model|Train RMSE|Test RMSE|
 |---|---|---|
-|LinearRegression|73474|73422|
+|Baseline: LinearRegression|73474|73422|
 |VotingRegressor(XGBoost, RandomForest, KNNRegressor)|39280|42741|
 |**Final Model: XGBoost**|**36677**|**39574**|
 
@@ -45,8 +45,8 @@ However, before concluding to use XGBoost as a standalone model, I decided to co
 Finally, the final model is being deployed on streamlit.io
 [Link to  streamlit web application](https://tmj1432-hdb-resale-price-predictor-application-app-5kd0gz.streamlit.app/)
 
-## Limitations & Future Works
-1) `Time:` as the years go by, HDB resale price may vary. <br>`Solution:`In order to combat this issue, we automate this whole process with an automated machine learning pipeline that automatically extracts data from [data.gov's HDB resale price API](https://data.gov.sg/dataset/resale-flat-prices) whenever it is updated as well as automatically model and deploy. 
-3) `Price:` due to inflation, the price of HDBs from 10 years ago may not be of equal value as the price of HDBs now. In o
+## Limitation & Future Work
+`Time:` as the years go by, HDB resale price may vary. <br>`Solution:`In order to combat this issue, we automate this whole process with an automated machine learning pipeline that automatically extracts data from [data.gov's HDB resale price API](https://data.gov.sg/dataset/resale-flat-prices) whenever it is updated as well as automatically model and deploy. 
 
 ## Conclusion
+In conclusion, we have managed to build and deploy a model that predicts HDB resale prices with a test RMSE of ~39600.
