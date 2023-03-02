@@ -1,8 +1,7 @@
 # HDB Resale Price Predictor Web Application with streamlit.io
 
 ## Final Product Live Demo 
-https://user-images.githubusercontent.com/113895589/222397167-1389e7cc-001c-4d2f-893f-dab766f00754.mov
-
+https://user-images.githubusercontent.com/113895589/222399442-fcba98e4-6cdf-46d4-9e74-5717f43ec2c5.mov
 
 ## Problem Statement
 As a data scientist for a real estate company in Singapore, I am tasked to build a predictive model to predict the resale price of HDBs. This model would then have to be deployed on the cloud which can be accessed by the relevant stakeholders.
