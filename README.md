@@ -17,15 +17,13 @@ As a data scientist for a real estate company in Singapore, I am tasked to build
 |planning_area|object|Area of Flat|
 |resale_price|float|Resale Price of Flat(Target Variable)
 
-## EDA
-
 ## Modelling
 **Modelling Summary**
 |Model|Train RMSE|Test RMSE|
 |---|---|---|
 |LinearRegression|73474|73422|
 |VotingRegressor(XGBoost, RandomForest, KNNRegressor)|39280|42741|
-|**Best Model: XGBoost**|**36677**|**39574**|
+|**Final Model: XGBoost**|**36677**|**39574**|
 
 To summarise the modelling section, I first built a baseline model using LinearRegression. Thereafter, I ran gridsearch on a pipeline with XGBoost, RandomForestRegressor and KNNRegressor. The results of the gridsearch were that XGBoost was the best model out of the three. 
 
@@ -33,8 +31,8 @@ However, before concluding to use XGBoost as a standalone model, I decided to co
 
 ## Model Evaluation
 `Permutation Importance:` Permutation importance is a technique for measuring the importance of features or variables in a machine learning model.
-
 **Results of running permutation importance**
+`Scoring:` R2
 |Feature|Permutation Importance|Std|
 |---|---|---|
 |floor_area_sqft|1.087|0.004|
@@ -42,10 +40,13 @@ However, before concluding to use XGBoost as a standalone model, I decided to co
 |lease_commence_date|0.318|0.001|
 |flat_type|0.098|0.001|
 |mid|0.063|0.001|
--with r2 scoring
 
 ## Deployment
+Finally, the final model is being deployed on streamlit.io
+[Link to  streamlit web application](https://tmj1432-hdb-resale-price-predictor-application-app-5kd0gz.streamlit.app/)
 
-## Limitations 
+## Limitations & Future Works
+1) `Time:` as the years go by, HDB resale price may vary. \n`Solution:`In order to combat this issue, we can build an automated machine learning pipeline that automatically extracts data from [data.gov's HDB resale price API](https://data.gov.sg/dataset/resale-flat-prices) whenever it is updated as well as automatically model and deploy. 
+3) `Price:` due to inflation, the price of HDBs from 10 years ago may not be of equal value as the price of HDBs now. In o
 
-## Conclusion & Recommendations
+## Conclusion
