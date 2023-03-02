@@ -33,7 +33,7 @@ However, before concluding to use XGBoost as a standalone model, I decided to co
 `Permutation Importance:` Permutation importance is a technique for measuring the importance of features or variables in a machine learning model.
 
 **Results of running permutation importance**
-`Scoring:` R2
+`Scoring: R2`
 |Feature|Permutation Importance|Std|
 |---|---|---|
 |floor_area_sqft|1.087|0.004|
