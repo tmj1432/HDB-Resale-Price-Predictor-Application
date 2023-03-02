@@ -53,6 +53,7 @@ Finally, the final model is being deployed on streamlit.io
 
 ## Limitation & Future Work
 `Time:` as the years go by, HDB resale price may vary. <br>`Solution:`In order to combat this issue, we automate this whole process with an automated machine learning pipeline that automatically extracts data from [data.gov's HDB resale price API](https://data.gov.sg/dataset/resale-flat-prices) whenever it is updated as well as automatically model and deploy. 
+`Data:` due to limitations of the API not being most up to date, the dataset only consists of data between 1967 and 2019. Therefore, it may not be able to generalise to current times. <br> `Solution:` However, this limitation can be easily overcome by collecting the data of the following years once the API updates or by collecting data from another source.
 
 ## Conclusion
 In conclusion, we have managed to build and deploy a model that predicts HDB resale prices with a test RMSE of ~39600.
