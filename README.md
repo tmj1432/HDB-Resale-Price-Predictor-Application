@@ -46,7 +46,7 @@ Finally, the final model is being deployed on streamlit.io
 [Link to  streamlit web application](https://tmj1432-hdb-resale-price-predictor-application-app-5kd0gz.streamlit.app/)
 
 ## Limitations & Future Works
-1) `Time:` as the years go by, HDB resale price may vary. \n`Solution:`In order to combat this issue, we can build an automated machine learning pipeline that automatically extracts data from [data.gov's HDB resale price API](https://data.gov.sg/dataset/resale-flat-prices) whenever it is updated as well as automatically model and deploy. 
+1) `Time:` as the years go by, HDB resale price may vary. <br>`Solution:`In order to combat this issue, we automate this whole process with an automated machine learning pipeline that automatically extracts data from [data.gov's HDB resale price API](https://data.gov.sg/dataset/resale-flat-prices) whenever it is updated as well as automatically model and deploy. 
 3) `Price:` due to inflation, the price of HDBs from 10 years ago may not be of equal value as the price of HDBs now. In o
 
 ## Conclusion
